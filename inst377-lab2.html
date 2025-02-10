@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Super Bowl 60 Predictions</title>
+        <style>
+            body {background-color: lightblue}
+            
+            #submit{background-color: red;
+            margin-top: 100px;
+            margin-left: 200px;}
+
+            #submit:hover {background-color: green;}
+            .hoverText{display: none;}
+            .submit:hover + .hoverText {display: block; color:black;}
+
+            .prediction {font-size: 30px;
+            margin-top: 50px;}
+        </style>
+    </head>
+    <body>
+        <h1>Super Bowl 60 Predictions</h1>
+        <br>
+        <form name = "predictionForm" method = "get" action = "inst377-lab2_succ.html">
+            <div class = "prediction">
+                <label for = "HomePrediction">Home Team: </label>
+                <input type = "text" id = "HomePrediction" required>
+                <br>
+                <label for = "AwayPrediction"> Away Team: </label>
+                <input type = "text" id = "AwayPrediction" required>
+                <br>
+            </div>
+            <div class = "submit">
+                <input type = "submit" id = "submit">
+            </div>
+            <div class = "hoverText">Please submit your predictions</div>
+            <hr>
+
+
+
+
+        </form>
+    </body>
+</html>
